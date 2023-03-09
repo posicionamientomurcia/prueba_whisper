@@ -3,3 +3,4 @@ ffmpeg-python==0.2.0
 pytube==12.1.0
 streamlit==1.13.0
 watchdog==2.1.9
+python -m pip install --upgrade pip
