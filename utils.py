@@ -11,7 +11,7 @@ SAMPLES = {
     "Streamlit Shorts: How to make a select box by Streamlit": "https://www.youtube.com/watch?v=8-GavXeFlEA"
     }
 
-MAX_VIDEO_LENGTH = 8*60
+MAX_VIDEO_LENGTH = 120*60
 
 
 def sample_to_url(option):
@@ -19,7 +19,7 @@ def sample_to_url(option):
 
 @st.cache(show_spinner=False)
 def load_whisper_model():
-    model = whisper.load_model('tiny', device='cpu')
+    model = whisper.load_model('large', device='cpu')
     return model
 
 
